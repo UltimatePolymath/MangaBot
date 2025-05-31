@@ -123,7 +123,7 @@ bot = Client('bot',
              api_id=int(env_vars.get('API_ID')),
              api_hash=env_vars.get('API_HASH'),
              bot_token=env_vars.get('BOT_TOKEN'),
-             max_concurrent_transmissions=3)
+             max_concurrent_transmissions=100)
 
 pdf_queue = AQueue()
 
